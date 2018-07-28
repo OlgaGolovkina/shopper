@@ -4,8 +4,12 @@ from django.contrib.sessions.models import Session
 
 class Product(models.Model):
     title = models.CharField(max_length=255)
-    description = models.TextField()
+    author = models.CharField(max_length=100)
+    image = models.CharField(max_length=100)
+    rating = models.IntegerField()
     price = models.IntegerField()
+    description = models.TextField()
+
 
     class Meta:
         ordering = ['title']

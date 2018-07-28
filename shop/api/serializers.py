@@ -11,14 +11,12 @@ class ProductModelSerializer(serializers.HyperlinkedModelSerializer):
             'id',
             'url',
             'title',
+            'author',
+            'image',
+            'rating',
             'description',
             'price',
         ]
-
-
-# from restshop.api.order_unit.models import OrderUnit
-# from restshop.api.unit.models import Unit
-# from restshop.api.unit.serializers import UnitForOrderDetail
 
 
 class CartUnitSerializer(serializers.HyperlinkedModelSerializer):
