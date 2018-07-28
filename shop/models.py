@@ -4,8 +4,8 @@ from django.contrib.sessions.models import Session
 
 class Product(models.Model):
     title = models.CharField(max_length=255)
-    author = models.CharField(max_length=100)
-    image = models.CharField(max_length=100)
+    author = models.CharField(max_length=150)
+    image = models.CharField(max_length=255)
     rating = models.IntegerField()
     price = models.IntegerField()
     description = models.TextField()
