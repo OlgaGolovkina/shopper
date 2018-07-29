@@ -5,7 +5,7 @@ from . import views
 from shop.api.views import CartView
 
 router = routers.DefaultRouter()
-router.register('api/products', views.ProductAPIView)
+router.register('books', views.ProductAPIView)
 
 
 urlpatterns = [
