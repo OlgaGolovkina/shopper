@@ -4,6 +4,7 @@ from rest_framework import serializers
 from ..models import Product
 from ..models import Cart
 
+
 class ProductModelSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Product
