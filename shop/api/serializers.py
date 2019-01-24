@@ -1,8 +1,8 @@
-from django.core.exceptions import ObjectDoesNotExist
+# from django.core.exceptions import ObjectDoesNotExist
 from rest_framework import serializers
 
-from ..models import Product
 from ..models import Cart
+from ..models import Product
 
 
 class ProductModelSerializer(serializers.HyperlinkedModelSerializer):
@@ -32,14 +32,14 @@ class CartUnitSerializer(serializers.HyperlinkedModelSerializer):
     # def validate(self, data):
     #     sku = data['sku']
     #     quantity = data['quantity']
-    # 
+    #
     #     try:
     #         unit = Unit.objects.get(sku=sku)
     #     except ObjectDoesNotExist:
     #         raise serializers.ValidationError('Unit does not exist')
-    # 
+    #
     #     if unit.num_in_stock < quantity:
-    #         raise serializers.ValidationError('There are not enough units in stock')
-    # 
+    #         raise serializers.ValidationError(
+    #             'There are not enough units in stock')
+    #
     #     return data
-
